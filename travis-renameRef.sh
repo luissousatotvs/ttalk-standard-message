@@ -4,6 +4,8 @@ git config --global user.name "TTalkIntegracoes"
 git checkout ${TRAVIS_BRANCH}
 git pull                   
 
+echo "Entrou no travisRef.sh"
+
 node validator/master/renameOpenApiRef.js
 node validator/master/renameSchemaRef.js
 
